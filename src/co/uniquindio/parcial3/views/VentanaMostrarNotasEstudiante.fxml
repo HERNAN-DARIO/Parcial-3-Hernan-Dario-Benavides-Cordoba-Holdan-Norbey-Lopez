@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1C1C39;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.parcial3.controllers.VentanaMostrarNotasEstudianteController">
+   <children>
+      <TextField fx:id="txtIde" alignment="CENTER" layoutX="193.0" layoutY="150.0" prefHeight="40.0" prefWidth="215.0" promptText="Identificación">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="71.0" layoutY="57.0" text="Mostrar Estudiante" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="50.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnVolver" layoutX="177.0" layoutY="237.0" mnemonicParsing="false" onAction="#volver" prefHeight="48.0" prefWidth="108.0" text="Volver">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAceptar" layoutX="317.0" layoutY="237.0" mnemonicParsing="false" onAction="#aceptar" prefHeight="48.0" prefWidth="108.0" text="Aceptar">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Label fx:id="label" layoutX="71.0" layoutY="301.0" prefHeight="75.0" prefWidth="477.0" />
+   </children>
+</AnchorPane>

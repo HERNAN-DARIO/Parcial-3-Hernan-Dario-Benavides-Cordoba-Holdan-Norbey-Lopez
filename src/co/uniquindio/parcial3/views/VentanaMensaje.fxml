@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="336.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.parcial3.controllers.VentanaMensajeController">
+   <children>
+      <Button fx:id="btnAceptar" layoutX="341.0" layoutY="297.0" mnemonicParsing="false" onAction="#aceptar" text="Aceptar" />
+      <TextArea fx:id="txtArea" layoutX="14.0" layoutY="14.0" prefHeight="264.0" prefWidth="375.0" />
+   </children>
+</AnchorPane>

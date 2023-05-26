@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.parcial3.controllers.AgregarEstudianteController">
+   <children>
+      <ImageView fitHeight="416.0" fitWidth="600.0" layoutY="-7.0">
+         <image>
+            <Image url="@../others/registroEstudiante.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="21.0" layoutY="215.0" prefHeight="171.0" prefWidth="200.0" style="-fx-background-color: #1C1C39;">
+         <children>
+            <GridPane layoutX="8.0" layoutY="5.0" prefHeight="162.0" prefWidth="184.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField alignment="CENTER" editable="false" text="Nota 1" />
+                  <TextField fx:id="txtNota1" alignment="CENTER" promptText="----------" GridPane.columnIndex="1" />
+                  <TextField alignment="CENTER" editable="false" text="Nota 2" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtNota2" alignment="CENTER" promptText="----------" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField alignment="CENTER" editable="false" text="Nota 3" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtNota3" alignment="CENTER" promptText="----------" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField alignment="CENTER" editable="false" text="Nota 4" GridPane.rowIndex="3" />
+                  <TextField fx:id="txtNota4" alignment="CENTER" promptText="----------" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField alignment="CENTER" editable="false" text="Nota 5" GridPane.rowIndex="4" />
+                  <TextField fx:id="txtNota5" alignment="CENTER" promptText="----------" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <TextField fx:id="txtNombre" layoutX="29.0" layoutY="100.0" prefHeight="31.0" prefWidth="184.0" promptText="Nombre" />
+      <TextField fx:id="txtIdentificacion" layoutX="29.0" layoutY="137.0" prefHeight="31.0" prefWidth="184.0" promptText="Identificación" />
+      <Button fx:id="btnAceptar" layoutX="360.0" layoutY="307.0" mnemonicParsing="false" onAction="#agregarEstudiante" prefHeight="50.0" prefWidth="119.0" style="-fx-background-color: #ffffff;" text="ACEPTAR" />
+      <Pane layoutX="21.0" layoutY="24.0" prefHeight="62.0" prefWidth="200.0" style="-fx-background-color: #1C1C39;">
+         <children>
+            <Label layoutX="-3.0" layoutY="21.0" text="AGREGAR ESTUDIANTE" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ComboBox fx:id="comboBox" layoutX="26.0" layoutY="176.0" prefHeight="31.0" prefWidth="184.0" promptText="Genero" />
+   </children>
+</AnchorPane>
